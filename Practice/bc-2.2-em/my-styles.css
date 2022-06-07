@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    /* line-height: 1.6; */
+    color: white;
+    padding: 20px;
+}
+
+.card {
+    width: 650px;
+    padding: 45px;
+    margin: 0 auto;
+    background-color: black;
+    /* margin: 10px; */
+}
+
+h1 {
+    margin-bottom: 96px;
+    font-size: 3rem;
+}
+
+h1 span {
+    color: gold;
+}
+
+a {
+    color: gold;
+    text-decoration: none;
+}
+
+a:focus,
+a:hover {
+    color: blue;
+}
+
+.btn {
+    padding: .5em 1.25em;
+    background: gold;
+    color: black;
+}
+
+.btn-lg {
+    font-size: 1.5rem;
+}
+.btn-md {
+    font-size: 1rem;
+}
+.btn-sm {
+    font-size: .65rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
