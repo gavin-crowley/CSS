@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Grid</title>
+    <style>
+      html {
+        font-family: sans-serif;
+      }
+      body {
+        margin: 0;
+      }
+
+      h1,
+      h2,
+      h3 {
+        margin: 0;
+        padding: 1em 0;
+      }
+
+      .site {
+        background: #d8d0d0;
+        min-height: 100vh;
+        text-align: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .header {
+        background: #477998;
+        color: white;
+        order: -3;
+        grid-column: span 2;
+      }
+
+      .main-content {
+        background: #edf6f9;
+        grid-column: span 2;
+      }
+
+      .sidebar {
+        background: #f64740;
+      }
+
+      .navbar {
+        background: #66717e;
+      }
+
+      .section {
+        background: #d1caa1;
+        grid-column: span 2;
+      }
+
+      .footer {
+        background: #291f1e;
+        color: white;
+        order: -3;
+        grid-column: span 2;
+      }
+
+      @media screen and (min-width: 768px) {
+        .site {
+          display: grid;
+          grid-template-columns: 1fr repeat(4, minmax(auto, 15em)) 1fr;
+          grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+          /* grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto); */
+        }
+
+        .header {
+            grid-column: span 6;
+        }
+
+        .main-content {
+          grid-column: 3/6;
+          grid-row: 2/4;
+        }
+
+        .sidebar {
+          grid-column: 2/3;
+          grid-row: 2/3;
+        }
+
+        .navbar {
+          grid-column: 2/3;
+          grid-row: 3/4;
+        }
+
+        .section {
+            grid-column: 2/6;
+        }
+
+        .footer {
+          order: 0;
+          grid-column: span 6;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site">
+      <header class="header">
+        <h1>Header</h1>
+      </header>
+
+      <main class="main-content">
+        <h2>Main</h2>
+      </main>
+
+      <aside class="sidebar">
+        <h3>Sidebar</h3>
+      </aside>
+
+      <nav class="navbar">
+        <h3>Navbar</h3>
+      </nav>
+
+      <section class="section">
+        <h3>Section</h3>
+      </section>
+
+      <footer class="footer">
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>
