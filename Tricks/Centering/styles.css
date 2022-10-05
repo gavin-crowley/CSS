@@ -1,0 +1,77 @@
+/* Center horizontally using Justify-Content */
+/* body {
+    display: flex ;
+    justify-content: center;
+} */
+
+/* Center vertically using align-items */
+/* body {
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+} */
+
+/* Center horizontally and vertically flexbox*/
+/* body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+
+/* Center horizontally*/
+/* .center {
+    margin: auto;
+} */
+
+/* Center vertically*/
+/* .center {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+} */
+
+/* Center horizontally and vertically*/
+/* .center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+
+
+
+
+/* Center Text within Div Horizontally */
+/* .center {
+    text-align: center;
+} */
+
+/* Center vertically within div with padding */
+/* .center {
+    padding: 50px 0;
+} */
+
+/* Center vertically within div with h,lh */
+/* .center {
+    height: 150px;
+    line-height: 150px;
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
